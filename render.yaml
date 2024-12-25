@@ -2,3 +2,4 @@ services:
   - name: web
     type: web
     env: node
+    startCommand: npm start
