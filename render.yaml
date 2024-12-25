@@ -1,4 +1,4 @@
 services:
-- name: web
-    type:web
-    env:node
+  - name: web
+    type: web
+    env: node
