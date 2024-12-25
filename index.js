@@ -15,7 +15,7 @@ import notifyRouter from "./routes/notifications.js";
 
 const app = express();
  // Use CORS middleware
- app.use(cors({origin:["http://localhost:5173", "http://localhost:3000"], credentials:true}));
+ app.use(cors({origin:["http://localhost:5173", "https://twitter-server-1uhm.onrender.com", "https://x-twitter-clone-five.vercel.app", "http://localhost:3000"], credentials:true}));
  //app.use(cors());
 
  app.use(bodyParser.urlencoded({limit:"30mb", extended:true}))
@@ -47,7 +47,7 @@ const app = express();
   export const io = new Server(server, {
     // Set also 'polling' for allowing http protocol as fallbacks
     cors: {
-      origin: ["http://localhost:5173", "http://localhost:3000"],
+      origin: ["http://localhost:5173", "https://twitter-server-1uhm.onrender.com", "https://x-twitter-clone-five.vercel.app", "http://localhost:3000"],
     },
     transports: ['websocket', 'polling'],
   });
